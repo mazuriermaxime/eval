@@ -1,0 +1,21 @@
+SAUVEGARDES & RESTAURATION
+
+pour la sauvegarde je suis allez dans:
+-ce pc 
+-windows (c:)
+-wamp
+-bin
+-mysql
+-mysql8.0.21
+-bin
+
+ dans la barre en haut j'ai écris CMD j'ai ensuite taper la commande:
+ mysqldump --user=root --password= --databases gescom_afpa >
+ C:\Backup\backup_gescom_afpa.sql
+ 
+ma base de donnée gescom_afpa et donc enregistré dans mon fichier backup.
+
+
+pour la restauration je suis rester dans le CMD et j'ai taper la commande
+suivante :
+ mysql --user=root --password= < C:\Backup\backup_gescom_afpa.sql
